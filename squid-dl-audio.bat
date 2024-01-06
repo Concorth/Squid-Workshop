@@ -13,11 +13,15 @@ echo "    /  \ | |  | | |  | || || |  | |
 echo "   / /\ \| |  | | |  | || || |  | |
 echo "  / ____ \ |__| | |__| || || |__| |
 echo " /_/    \_\____/|_____/_____\____/ 
+echo "
 
+:loop
+color d
 REM Get user input for video link
 set /p "video_link=[AUDIO ONLY DOWNLOAD] Paste YouTube link: "
 
 REM Download run download command
 yt-dlp.exe -x --audio-format wav "%video_link%"
 echo Proccess complete
+goto loop
 pause

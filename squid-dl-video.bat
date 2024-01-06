@@ -13,7 +13,10 @@ echo "  \ \  / /  | | | |  | | |__ | |  | |
 echo "   \ \/ /   | | | |  | |  __|| |  | |
 echo "    \  /   _| |_| |__| | |___| |__| |
 echo "     \/   |_____|_____/|______\____/ 
+echo "
 
+:loop
+color d
 REM Get user input for video link
 set /p "video_link=Paste YouTube link: "
 
@@ -23,4 +26,5 @@ set /p "format=Enter desired video format (e.g. mp4, mkv): "
 REM Download run download command
 yt-dlp.exe --remux "%format%" "%video_link%"
 echo Proccess complete
+goto loop
 pause
