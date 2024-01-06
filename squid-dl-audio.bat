@@ -1,5 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
+color a
 echo "   _____  ____  _    _ _____ _____         _____  _      
 echo "  / ____|/ __ \| |  | |_   _|  __ \       |  __ \| |     
 echo " | (___ | |  | | |  | | | | | |  | |______| |  | | |     
@@ -9,10 +10,9 @@ echo " |_____/ \___\_\\____/|_____|_____/       |_____/|______|
 echo "
 
 REM Get user input for video link
-set /p "video_link=Paste YouTube Link:"
-
-REM Get user input for format
-set /p "format=Enter format (e.g. mp4, mkv, mp3)"
+set /p "video_link=[AUDIO ONLY DOWNLOAD] Paste YouTube link: "
 
 REM Download run download command
-yt-dlp.exe -f "%format%" "%video_link%"
+yt-dlp.exe -x --audio-format wav "%video_link%"
+echo Proccess complete
+pause
