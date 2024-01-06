@@ -1,6 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
-color a
+color d
 echo "   _____  ____  _    _ _____ _____         _____  _      
 echo "  / ____|/ __ \| |  | |_   _|  __ \       |  __ \| |     
 echo " | (___ | |  | | |  | | | | | |  | |______| |  | | |     
