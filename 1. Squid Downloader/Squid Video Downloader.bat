@@ -16,9 +16,9 @@ echo "     \/   |_____|_____/|______\____/       |_____/|______|
 echo "
 echo Powered by yt-dlp and FFmpeg
 REM Update yt-dlp
-echo Getting latest yt-dlp version...
+echo Fetching latest yt-dlp version...
 dependencies\yt-dlp.exe -U > nul
-echo Update complete
+echo Update complete...
 :loop
 color d
 REM Get user input for video link
