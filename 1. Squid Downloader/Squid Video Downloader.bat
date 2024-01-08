@@ -14,8 +14,8 @@ echo "   \ \/ /   | | | |  | |  __|| |  | |______| |  | | |
 echo "    \  /   _| |_| |__| | |___| |__| |      | |__| | |____ 
 echo "     \/   |_____|_____/|______\____/       |_____/|______|
 echo "
-
 echo Powered by yt-dlp and FFmpeg
+REM Update yt-dlp
 echo Getting latest yt-dlp version...
 dependencies\yt-dlp.exe -U > nul
 echo Update complete
@@ -23,10 +23,8 @@ echo Update complete
 color d
 REM Get user input for video link
 set /p "video_link=Paste YouTube link: "
-
 REM Get user input for format
 set /p "format=Enter desired video format (e.g. mp4, mkv): "
-
 REM Download run download command
 dependencies\yt-dlp.exe --remux "%format%" "%video_link%" 
 echo Proccess complete
