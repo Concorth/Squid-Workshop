@@ -16,7 +16,7 @@ echo " /_/    \_\____/|_____/_____\____/       |_____/|______|
 echo "
 
 echo Getting latest version...
-yt-dlp.exe -U > nul
+dependencies\yt-dlp.exe -U > nul
 echo Update complete
 :loop
 color d
