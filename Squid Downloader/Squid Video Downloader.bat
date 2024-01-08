@@ -15,6 +15,10 @@ echo "    \  /   _| |_| |__| | |___| |__| |      | |__| | |____
 echo "     \/   |_____|_____/|______\____/       |_____/|______|
 echo "
 
+REM cd "dependencies"
+echo Getting latest version...
+dependencies\yt-dlp.exe -U > nul
+echo Update complete
 :loop
 color d
 REM Get user input for video link
@@ -24,7 +28,7 @@ REM Get user input for format
 set /p "format=Enter desired video format (e.g. mp4, mkv): "
 
 REM Download run download command
-yt-dlp.exe --remux "%format%" "%video_link%"
+dependencies\yt-dlp.exe --remux "%format%" "%video_link%" 
 echo Proccess complete
 goto loop
 pause

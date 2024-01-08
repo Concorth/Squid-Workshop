@@ -15,6 +15,9 @@ echo "  / ____ \ |__| | |__| || || |__| |      | |__| | |____
 echo " /_/    \_\____/|_____/_____\____/       |_____/|______|                                                      
 echo "
 
+echo Getting latest version...
+yt-dlp.exe -U > nul
+echo Update complete
 :loop
 color d
 REM Get user input for video link
@@ -25,3 +28,6 @@ yt-dlp.exe -x --audio-format wav "%video_link%"
 echo Proccess complete
 goto loop
 pause
+
+
+-o "downloads/%(title)s.%(ext)s"
