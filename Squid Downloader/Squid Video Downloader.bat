@@ -15,8 +15,8 @@ echo "    \  /   _| |_| |__| | |___| |__| |      | |__| | |____
 echo "     \/   |_____|_____/|______\____/       |_____/|______|
 echo "
 
-REM cd "dependencies"
-echo Getting latest version...
+echo Powered by yt-dlp and FFmpeg
+echo Getting latest yt-dlp version...
 dependencies\yt-dlp.exe -U > nul
 echo Update complete
 :loop

@@ -15,7 +15,8 @@ echo "  / ____ \ |__| | |__| || || |__| |      | |__| | |____
 echo " /_/    \_\____/|_____/_____\____/       |_____/|______|                                                      
 echo "
 
-echo Getting latest version...
+echo Powered by yt-dlp and FFmpeg
+echo Getting latest yt-dlp version...
 dependencies\yt-dlp.exe -U > nul
 echo Update complete
 :loop
