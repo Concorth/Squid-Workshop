@@ -24,7 +24,7 @@ color d
 REM Get user input for video link
 set /p "video_link=Paste YouTube link: "
 REM Download run download command
-yt-dlp.exe -x --audio-format wav "%video_link%"
+dependencies\yt-dlp.exe -x --audio-format wav "%video_link%"
 echo Proccess complete
 goto loop
 pause
